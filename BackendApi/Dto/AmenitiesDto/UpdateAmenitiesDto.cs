@@ -7,6 +7,7 @@ namespace BackendApi.Dto.AmenitiesDto
 {
     public class UpdateAmenitiesDto
     {
-        
+        [Required]
+        public string Name { get; set; }
     }
 }

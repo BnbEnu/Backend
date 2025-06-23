@@ -7,6 +7,6 @@ namespace BackendApi.Dto.AmenitiesDto
 {
     public class ViewAmenitiesDto
     {
-        
+        public string Name { get; set; }   
     }
 }

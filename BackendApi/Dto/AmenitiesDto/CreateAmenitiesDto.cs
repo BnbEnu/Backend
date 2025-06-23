@@ -7,6 +7,7 @@ namespace BackendApi.Dto.Amenities
 {
     public class CreateAmenitiesDto
     {
-        
+        [Required]
+        public string Name { get; set; }
     }
 }
