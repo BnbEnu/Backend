@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
 namespace BackendApi.Dto.Amenities
@@ -8,6 +9,6 @@ namespace BackendApi.Dto.Amenities
     public class CreateAmenitiesDto
     {
         [Required]
-        public string Name { get; set; }
+        public required string Name { get; set; }
     }
 }

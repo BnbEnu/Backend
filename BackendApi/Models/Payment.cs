@@ -16,13 +16,13 @@ namespace BackendApi.Models
     {
         Card,
         Transfer,
-    Wallet
+        Wallet
 }
     public class Payment
     {
         public Guid PaymentId { get; set; }
         public Guid BookingId { get; set; }
-        public Booking Booking { get; set; }
+        public Booking? Booking { get; set; }
         public decimal Amount { get; set; }
         public PaymentMethod Method { get; set; }
         public PaymentStatus Status { get; set; }

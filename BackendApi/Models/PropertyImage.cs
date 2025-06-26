@@ -7,9 +7,10 @@ namespace BackendApi.Models
 {
     public class PropertyImage
     {
+        
         public Guid PropertyImageId { get; set; }
         public Guid PropertyId { get; set; }
-        public Property Property { get; set; }
-        public string ImageUrl { get; set; } 
+        public Property? Property { get; set; }
+        public string ImageUrl { get; set; } = string.Empty;
     }
 }

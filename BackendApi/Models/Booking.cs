@@ -16,14 +16,14 @@ namespace BackendApi.Models
     {
         public Guid BookingId { get; set; }
         public Guid PropertyId { get; set; }
-        public Property Property { get; set; }
+        public Property? Property { get; set; }
         public Guid GuestId { get; set; }
-        public User Guest { get; set; }
+        public User? Guest { get; set; }
         public DateTime CheckIn { get; set; }
         public DateTime CheckOut { get; set; }
         public decimal TotalPrice { get; set; }
         public BookingStatus Status { get; set; } = BookingStatus.Pending;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public Review Review { get; set; }
+        public Review? Review { get; set; }
     }
 }
